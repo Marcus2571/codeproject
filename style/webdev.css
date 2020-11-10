@@ -1,0 +1,87 @@
+body {
+    background-color: #3d3d3d;
+    margin: 0;
+}
+
+
+/* Navbar start */
+#navbar {background-color: #555;}
+#navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  display:inline-block;
+}
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li {display: inline-block;}
+ul li:hover {background: #555;}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+ul li ul li { 
+  background: #555; 
+  display: block; 
+}
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background: #666;}
+/* Navbar end */
+
+/* HTML Basics Box */
+#htmlbasics {
+  background-color: #fff;
+  font-size: 20px;
+  text-align: center;
+  padding: 15px;
+  margin: 15px 875px;
+  border-radius: 15px;
+}
+
+
+.htmlboxes {
+  background-color: #fff;
+  width: 30%;
+  height: 100px;
+  border-radius: 15px;
+  font-size: 25px;
+}
+
+/* First HTML box start */
+/* #fhtmlbox {
+  vertical-align: middle;
+} */
+
+#fboxtxt {
+  display:  table-cell;
+  vertical-align: middle;
+}
+
+#fhtmlimg {
+  vertical-align: top;
+}
+
+#fstarimg {
+  height: 30px;
+  width: 30px;
+  float: left;
+  vertical-align: bottom;
+}
+/* First HTML box end */
+
+.htmlimgsize {
+  height: 75px;
+  width: 75px;
+}
+
+
+.starimgsize {
+  height: 30px;
+  width: 30px;
+}

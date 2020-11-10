@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#navbar {background-color: #3d3d3d;}
+div a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  display: inline-block;
+}
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li {display: inline-block;}
+ul li:hover {background: #555;}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+  z-index: 4;
+}
+ul li ul li { 
+  background: #555; 
+  display: block; 
+}
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background: #666;}
+
+#loginform {
+  float: right;
+}
+
+#loginbutton {
+  width: 75px;
+  height: 30px;
+  margin: 10px 5px 5px 5px;
+}
+
+ul input:hover {
+  background-color: #f3f3f3bb;
+
+}
+
+#backImg {
+    display: none;
+}
+
+#img1 {
+    height: 250px;
+    max-width: 100%;
+    display: block;
+    position: relative;
+    padding: 0 1000px 0 0;
+}
+
+
+
+
