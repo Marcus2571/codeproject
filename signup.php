@@ -10,6 +10,7 @@
     <div>
         <ul id="detailinput">
             <form method="POST" action="/dashboard/login.php">
+                <li>First name:<input type="text" name=""></li>
                 <li>Email:<input type="text" name="email"></li>
                 <li>Username:<input type="text" name="user"></li>
                 <li>Password:<input type="password" name="password"></li>
