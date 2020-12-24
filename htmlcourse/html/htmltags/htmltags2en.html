@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover HTML and Tags</title>
+    <link rel="stylesheet" type="text/css" href="/website/htmlcourse/style/htmltags/htmltags2en.css">
+    <script type="text/JavaScript" src="/website/htmlcourse/script/htmltags/htmltags2en.js"></script>
+</head>
+<body>
+    <div id="navbar">
+        <a href="/website/index/html/index.html">Code Project</a>
+        <ul>
+          <li>
+            <a href="">Course Library</a>
+            <ul>
+              <li><a href="/website/htmlcourse/html/webdev.html">Web Development</a></li>
+              <li><a href="/website/pythoncourse/html/python.html">Python</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="userform" action="/website/signup.php">
+          <input class="loginbutton" type="submit" value="Sign up">
+        </form>
+        <form class="userform" action="/website/login.php">
+          <input class="loginbutton" type="submit" value="Log in">
+        </form>
+        <div class="languagepicker">
+          <button class="languagebtn">Select Language</button>
+          <div class="languagepicker-content">
+            <a href="/website/htmlcourse/html/htmltags/htmltags2en.html"><img class="languageflags" src="/website/images/uk-flag.png"></a>
+            <a href="/website/htmlcourse/html/htmltags/htmltags2dk.html"><img class="languageflags" src="/website/images/danish-flag.png"></a>
+          </div>
+        </div>
+      </div>
+
+    <div id="text">
+        <h2>HTML "Children"</h2>
+        <br>
+        <p><b><i>Hypertext Markup Language</i> (HTML)</b> consists of a ton of different tags like the div tag, but in this lesson i will only talk about the basic ones.
+        Like the paragraph tag <b>&lt;p&gt;&lt;/p&gt;</b>. The paragraph tag is used to display text on a website.
+        <br><br>html is the language that structures all websites on the internet. html code tells web browsers how to display content like images, links, and text on a website.
+        <br>html are build of start tags <b>&lt; &gt;</b> and closing tags <b>&lt;/ &gt;</b>. When you first setup a html file, you start by telling the browser that 
+        the file contains html with the <b style="font-size: 19px;">&lt;!DOCTYPE html&gt;</b> tag. Unlike almost every other tag this tag does not need a closing tag. You then use the <b>&lt;html&gt;</b> 
+        tag to tell the browser that this section contains html code. Inside the html tag you use the <b>&lt;head&gt;</b> and <b>&lt;body&gt;</b> tags. The head tag contains 
+        the title of your website, it also contains the links to external files like CSS files which i will get onto later into this guide. The body tag contains all the visible 
+        content like this text. <br><img src="/website/images/basichtml.png"><br> The image above displays a basic html file. The picture does not show the more advanced things you 
+        setup when you get a bit more familiar with html.</p>
+
+      <ul class="assignments">
+        <li>
+          <label id="assignment2label" for="assignment2"  style="word-wrap:break-word">
+            <input id="assignment2"  type="checkbox" value="test" />
+            Make a paragraph tag with the text: I now know how to make a paragraph in html
+          </label>
+        </li>
+      </ul>
+        
+      <img id="advance-arrow" src="/website/images/advance-arrow.png" onclick="moveon()">
+      <img id="hint" src="/website/images/magnifying-glass.png" onclick="hint()">
+    </div>
+
+    <div class="code-area">
+        <textarea id="htmlcode" placeholder="HTML code" oninput="showpreview()"></textarea>
+        <!-- <textarea id="csscode" placeholder="CSS code" oninput="showpreview()"></textarea>
+        <textarea id="jscode" placeholder="JavaScript code" oninput="showpreview()"></textarea> -->
+    </div>
+
+    <div class="preview-area">
+        <iframe id="preview-window"></iframe>
+    </div>
+
+</body>
+</html>
