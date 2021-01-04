@@ -125,21 +125,32 @@ ul {
     color: #000;
     font-family: Calibri, sans-serif, times, arial;
     font-size: 20px;
-    padding: 15px;
-    width: 40%;
+    padding: 1% 3% 1% 1%;
+    width: 32.5%;
     height: 100%;
     line-height: 23px;
     float: left;
     border: 1px solid #000;
     border-radius: 15px;
     margin-left: 0.5%;
+    overflow-y: scroll;
 }
 
+#text::-webkit-scrollbar {
+    width: 0;
+}
+
+.text-content-ul {
+    margin-left: 4%;
+    margin-right: 45%;
+    float: left;
+}
+/* 
 .code-area {
     display: flex;
     flex-direction: column;
     width: 56%;
-    height: 20%;
+    height: 58%;
     border: 1px solid #000;
     border-radius: 15px;
     float: right;
@@ -159,7 +170,7 @@ ul {
 .preview-area {
     background-color: #fff;
     width: 56%;
-    height: 78%;
+    height: 40%;
     float: right;
     margin-right: 1%;
     margin-top: 1%;
@@ -171,30 +182,31 @@ ul {
     height: 100%;
     border: 1px solid black;
     border-radius: 15px;
-}
+} */
 
 #advance-arrow {
     transform: rotate(180deg);
-    width: 15%;
-    height: 12.5%;
+    width: 12%;
+    height: 9.5%;
     float: right;
-    margin-top: 3.5%;
+    margin-top: 5.5%;
 }
 
 #advance-arrow:hover {
     cursor: pointer;
 }
-
+/* 
 #hint {
-    width: 15%;
-    height: 12.5%;
+    display: none;
+    width: 12%;
+    height: 9.5%;
     float: left;
-    margin-top: 3.5%;
+    margin-top: 5.5%;
 }
 
 #hint:hover {
     cursor: pointer;    
-}
+} */
 
 input[type=checkbox] {
     position: relative;
@@ -230,19 +242,30 @@ input[type=checkbox]:checked:after {
     left: 6px;
 }
 
+#instructions {
+    height: 11%;
+    border: 2px solid #000;
+    padding: 0 1% 0 1%;
+    margin-top: 3%;
+}
+
 .assignments {
     list-style: none;
-    padding: 1%;
     text-align: left;
     font-size: 20px;
+    vertical-align: inherit;
 }
 
 .assignments li {
-    border: 2px solid #000;
-    height: 8%;
+    float: left;
 }
 
 [type="checkbox"]
 {
     vertical-align: baseline;
+}
+
+#html-diagram {
+    width: 67%;
+    height: 70%;
 }

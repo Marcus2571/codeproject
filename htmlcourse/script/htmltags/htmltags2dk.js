@@ -1,9 +1,15 @@
-var wanted = "<p>Nu har jeg lært at lave et paragraf tag i html</p>"
+var wanted = `<html>
+  <head>
+  </head>
+  <body>
+    <p>Nu har jeg lært at sætte et html dokument op</p>
+  </body>
+</html>`;
 
 function moveon() {
     let code = document.getElementById("htmlcode");
         if (code.value == wanted ){
-            window.location.href = '/website/htmlcourse/html/htmltags/htmltags2dk.html';
+            window.location.href = '/website/htmlcourse/html/htmltags/htmltagsdk.html';
         } else {
             document.getElementById("hint").style.display="block";
             alert('Forkert! Hvis du vil have et hint, så tryk på forstørrelsesglasset i nederste venstre hjørne');

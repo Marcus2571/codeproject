@@ -37,14 +37,14 @@
     <div id="text">
         <h2>HTML "Children"</h2>
         <br>
-        <p><b><i>Hypertext Markup Language</i> (HTML)</b> Består af rigtig mange forskellige tags som fx. div tagget, men i denne lektion vil jeg kun tale om de grundlæggende. som fx.
+        <p>html indeholder det man kalder <i>"Children"</i> Children erBestår af rigtig mange forskellige tags som fx. div tagget, men i denne lektion vil jeg kun tale om de grundlæggende. som fx.
         paragraf tagget <b>&lt;p&gt;&lt;/p&gt;</b>. Paragraf tagget bruges til at lægge tekst ind på en hjemmeside.
         <br><br>html er det programmeringssprog alle hjemmesider på internettet er bygget på. html kode fortæller web browsere hvordan de skal vise indhols som billeder, links, 
         og tekst på en hjemmeside. Html består af start tags <b>&lt; &gt;</b> og slut tags <b>&lt;/ &gt;</b>. Når du sætter en html fil op, starter du med, at fortælle 
         browseren, at filen er en html fil med <b style="font-size: 19px;">&lt;!DOCTYPE html&gt;</b> tagget. I modsætning til næsten alle andre tags, så skal det her tag ikke bruge
         et slut tag. Det næste du gør, er du bruger <b>&lt;html&gt;</b> tagget til at fortælle browseren hvor html koden befinder sig. Inde i html tagget bruger du 
         <b>&lt;head&gt;</b> og <b>&lt;body&gt;</b> tags. Head tagget indeholder din hjemmesides titel, det indeholder også links til externe filer som CSS filer hvilket jeg vil komme
-        ind på senere i den her guide. Body tagget indeholder alt det synlige indhold som det her tekst. <br><img src="/website/images/basichtml.png"><br> Billedet ovenover viser 
+        ind på senere i den her guide. Body tagget indeholder alt det synlige indhold som det her tekst. <br><br> Billedet ovenover viser 
         en meget basic html fil. Billedet viser ikke de mere avanceret ting, du bruger når du lære html at kende lidt bedre.</p>
 
       <ul class="assignments">
@@ -57,18 +57,19 @@
       </ul>
         
       <img id="advance-arrow" src="/website/images/advance-arrow.png" onclick="moveon()">
-      <img id="hint" src="/website/images/magnifying-glass.png" onclick="hint()">
+      <!-- <img id="hint" src="/website/images/magnifying-glass.png" onclick="hint()"> -->
     </div>
-
-    <div class="code-area">
+    
+    <img id="html-diagram" src="https://content.codecademy.com/courses/learn-html/elements-and-structure/html%20lesson%20image.svg">
+    <!-- <div class="code-area">
         <textarea id="htmlcode" placeholder="HTML code" oninput="showpreview()"></textarea>
-        <!-- <textarea id="csscode" placeholder="CSS code" oninput="showpreview()"></textarea>
-        <textarea id="jscode" placeholder="JavaScript code" oninput="showpreview()"></textarea> -->
-    </div>
+        <textarea id="csscode" placeholder="CSS code" oninput="showpreview()"></textarea>
+        <textarea id="jscode" placeholder="JavaScript code" oninput="showpreview()"></textarea>
+    </div> -->
 
-    <div class="preview-area">
+    <!-- <div class="preview-area">
         <iframe id="preview-window"></iframe>
-    </div>
+    </div> -->
 
 </body>
 </html>

@@ -35,33 +35,44 @@
       </div>
 
     <div id="text">
-        <h2>Opdag HTML og Tags</h2>
+        <h2>Introduktion til HTML</h2>
         <br>
-        <p><b><i>Hypertext Markup Language</i> (HTML)</b> Består af rigtig mange forskellige tags som fx. div tagget, men i denne lektion vil jeg kun tale om de grundlæggende. som fx.
-        paragraf tagget <b>&lt;p&gt;&lt;/p&gt;</b>. Paragraf tagget bruges til at lægge tekst ind på en hjemmeside.
-        <br><br>html er det programmeringssprog alle hjemmesider på internettet er bygget på. html kode fortæller web browsere hvordan de skal vise indhols som billeder, links, 
-        og tekst på en hjemmeside. Html består af start tags <b>&lt; &gt;</b> og slut tags <b>&lt;/ &gt;</b>. Når du sætter en html fil op, starter du med, at fortælle 
-        browseren, at filen er en html fil med <b style="font-size: 19px;">&lt;!DOCTYPE html&gt;</b> tagget. I modsætning til næsten alle andre tags, så skal det her tag ikke bruge
-        et slut tag. Det næste du gør, er du bruger <b>&lt;html&gt;</b> tagget til at fortælle browseren hvor html koden befinder sig. Inde i html tagget bruger du 
-        <b>&lt;head&gt;</b> og <b>&lt;body&gt;</b> tags. Head tagget indeholder din hjemmesides titel, det indeholder også links til externe filer som CSS filer hvilket jeg vil komme
-        ind på senere i den her guide. Body tagget indeholder alt det synlige indhold som det her tekst. <br><img src="/website/images/basichtml.png"><br> Billedet ovenover viser 
-        en meget basic html fil. Billedet viser ikke de mere avanceret ting, du bruger når du lære html at kende lidt bedre.</p>
-
-      <ul class="assignments">
-        <li>
-          <label id="assignment2label" for="assignment2"  style="word-wrap:break-word">
-            <input id="assignment2"  type="checkbox" value="test" />
-            Lav et paragraf tag med teksten: Nu har jeg lært at lave et paragraf tag i html
-          </label>
-        </li>
-      </ul>
+        <p class="text-content">Velkommen til kodningens verden! Sidste år, startede millioner af mennesker med HTML. Hvorfor? Spørger du måske. HTML er alle hjemmesiders skelet.
+          Det er ofte det første sprog der læres af, udviklere, marketingfolk og designere, og det er kernen i front-end udviklingsarbejde. Hvis dette er første gang du rører 
+          ved kode, er jeg spændt på, hvad du kommer til at udrette.
+          <br><br>
+          Så hvad er HTML nøjagtigt? HTML giver struktur til det indhold, der vises på et websted, såsom billeder, tekst eller videoer. Højreklik på en vilkårlig side på 
+          internettet, vælg "Inspicer", og du vil se HTML i et panel på din skærm.
+          <br><br>
+          HTML står for HyperText Markup Language:
+          <br><br>
+          <ul id="text-content-ul">
+            <li>Et markup- sprog er et computersprog, der definerer strukturen og præsentationen af ​​rå tekst.</li><br>
+            <li>I HTML kan computeren fortolke rå tekst, der er pakket i HTML-elementer.</li><br>
+            <li>HyperText er tekst, der vises på en computer eller enhed, der giver adgang til anden tekst gennem links, også kendt som hyperlinks. 
+              Du har sandsynligvis klikket på et par hyperlinks på vej til dette CodeProject-kursus.</li><br><br>
+          </ul></p>
+          <p class="text-content">At lære HTML er det første skridt i oprettelsen af ​​websteder, men selv en smule viden kan hjælpe dig med at indsætte kodestykker 
+            i nyhedsbreve, blog eller webstedsskabeloner. Når du fortsætter med at lære, kan du lag HTML med CSS og JavaScript for at skabe visuelt overbevisende 
+            og dynamiske websteder. Men for nu vil vi fokusere på, hvordan man tilføjer og ændrer grundlæggende indhold på en side som tekst, billeder og videoer. 
+            Bare rolig, hvis hjemmesiderne ser grimme ud - vi er kun lige ved at komme i gang.</p>
+      <div id="instructions">
+        <ul class="assignments">
+          <li>
+            <label id="assignment2label" for="assignment2"  style="word-wrap:break-word">
+              <input id="assignment2"  type="checkbox" value="test" />
+            </label>
+          </li>
+          <li><p>I kodeeditoren til højre skal du skrive dit "Nu har jeg lært at lave et paragraf tag i html" imellem &lt;p&gt; og &lt;/p&gt; derefter trykke på den blå pil.</p></li>
+        </ul>
+      </div>
         
       <img id="advance-arrow" src="/website/images/advance-arrow.png" onclick="moveon()">
       <img id="hint" src="/website/images/magnifying-glass.png" onclick="hint()">
     </div>
 
     <div class="code-area">
-        <textarea id="htmlcode" placeholder="HTML code" oninput="showpreview()"></textarea>
+        <textarea id="htmlcode" placeholder="HTML kodeeditor" oninput="showpreview()"></textarea>
         <!-- <textarea id="csscode" placeholder="CSS code" oninput="showpreview()"></textarea>
         <textarea id="jscode" placeholder="JavaScript code" oninput="showpreview()"></textarea> -->
     </div>
