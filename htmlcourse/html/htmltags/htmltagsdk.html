@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover HTML and Tags</title>
     <link rel="stylesheet" type="text/css" href="/website/htmlcourse/style/htmltags/htmltagsdk.css">
     <script type="text/JavaScript" src="/website/htmlcourse/script/htmltags/htmltagsdk.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div id="navbar">
         <a href="/website/index/html/index.html">Code Project</a>
         <ul>
@@ -35,9 +35,10 @@
       </div>
 
     <div id="text">
-        <h2>Introduktion til HTML</h2>
-        <br>
-        <p class="text-content">Velkommen til kodningens verden! Sidste år, startede millioner af mennesker med HTML. Hvorfor? Spørger du måske. HTML er alle hjemmesiders skelet.
+      <h2>Introduktion til HTML</h2>
+      <br>
+      <div class="text-content">
+        <p>Velkommen til kodningens verden! Sidste år, startede millioner af mennesker med HTML. Hvorfor? Spørger du måske. HTML er alle hjemmesiders skelet.
           Det er ofte det første sprog der læres af, udviklere, marketingfolk og designere, og det er kernen i front-end udviklingsarbejde. Hvis dette er første gang du rører 
           ved kode, er jeg spændt på, hvad du kommer til at udrette.
           <br><br>
@@ -46,24 +47,26 @@
           <br><br>
           HTML står for HyperText Markup Language:
           <br><br>
-          <ul id="text-content-ul">
+          <ul>
             <li>Et markup- sprog er et computersprog, der definerer strukturen og præsentationen af ​​rå tekst.</li><br>
             <li>I HTML kan computeren fortolke rå tekst, der er pakket i HTML-elementer.</li><br>
             <li>HyperText er tekst, der vises på en computer eller enhed, der giver adgang til anden tekst gennem links, også kendt som hyperlinks. 
               Du har sandsynligvis klikket på et par hyperlinks på vej til dette CodeProject-kursus.</li><br><br>
-          </ul></p>
-          <p class="text-content">At lære HTML er det første skridt i oprettelsen af ​​websteder, men selv en smule viden kan hjælpe dig med at indsætte kodestykker 
+          </ul>
+            At lære HTML er det første skridt i oprettelsen af ​​websteder, men selv en smule viden kan hjælpe dig med at indsætte kodestykker 
             i nyhedsbreve, blog eller webstedsskabeloner. Når du fortsætter med at lære, kan du lag HTML med CSS og JavaScript for at skabe visuelt overbevisende 
             og dynamiske websteder. Men for nu vil vi fokusere på, hvordan man tilføjer og ændrer grundlæggende indhold på en side som tekst, billeder og videoer. 
             Bare rolig, hvis hjemmesiderne ser grimme ud - vi er kun lige ved at komme i gang.</p>
-      <div id="instructions">
+        </div>
+
+            <div id="instructions">
         <ul class="assignments">
           <li>
             <label id="assignment2label" for="assignment2"  style="word-wrap:break-word">
               <input id="assignment2"  type="checkbox" value="test" />
+              I kode editoren til til højre, skriv "Nu har jeg lært at lave et paragraf tag i html" imellem &lt;p&gt; og &lt;/p&gt;, så tryk på den blå pil.
             </label>
           </li>
-          <li><p>I kodeeditoren til højre skal du skrive dit "Nu har jeg lært at lave et paragraf tag i html" imellem &lt;p&gt; og &lt;/p&gt; derefter trykke på den blå pil.</p></li>
         </ul>
       </div>
         
@@ -72,7 +75,7 @@
     </div>
 
     <div class="code-area">
-        <textarea id="htmlcode" placeholder="HTML kodeeditor" oninput="showpreview()"></textarea>
+        <textarea id="htmlcode" placeholder="HTML Code Editor" oninput="showpreview()"></textarea>
         <!-- <textarea id="csscode" placeholder="CSS code" oninput="showpreview()"></textarea>
         <textarea id="jscode" placeholder="JavaScript code" oninput="showpreview()"></textarea> -->
     </div>
@@ -81,5 +84,5 @@
         <iframe id="preview-window"></iframe>
     </div>
 
-</body>
+  </body>
 </html>

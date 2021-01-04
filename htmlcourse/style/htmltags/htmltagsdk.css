@@ -118,8 +118,6 @@ ul {
     height: 100%;
 }
 
-
-
 #text {
     background-color: #f3f3f3;
     color: #000;
@@ -140,9 +138,8 @@ ul {
     width: 0;
 }
 
-#text-content-ul {
-    margin-left: 2.5%;
-    float: left;
+.text-content ul li {
+    margin-left: 3%;
 }
 
 .code-area {
@@ -252,15 +249,16 @@ input[type=checkbox]:checked:after {
     list-style: none;
     text-align: left;
     font-size: 20px;
-    vertical-align: inherit;
 }
 
 .assignments li {
-    float: left;
+    display: inline;
+    vertical-align: center;
 }
 
-
-
+#assignment2label {
+    display: flex;
+}
 
 [type="checkbox"]
 {
