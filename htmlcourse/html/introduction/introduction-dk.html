@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover HTML and Tags</title>
-    <link rel="stylesheet" type="text/css" href="/website/htmlcourse/style/htmltags/htmltagsdk.css">
-    <script type="text/JavaScript" src="/website/htmlcourse/script/htmltags/htmltagsdk.js"></script>
+    <title>Introduktion til HTML</title>
+    <link rel="stylesheet" type="text/css" href="/website/htmlcourse/style/introduction/introduction-dk.css">
+    <script type="text/JavaScript" src="/website/htmlcourse/script/introduction/introduction-dk.js"></script>
   </head>
   <body>
     <div id="navbar">
@@ -19,22 +19,23 @@
             </ul>
           </li>
         </ul>
-        <form class="userform" action="/website/signup.php">
+        <form class="userform" action="/website/loginsignup/php/signup.php">
           <input class="loginbutton" type="submit" value="Sign up">
         </form>
-        <form class="userform" action="/website/login.php">
+        <form class="userform" action="/website/loginsignup/php/login.php">
           <input class="loginbutton" type="submit" value="Log in">
         </form>
         <div class="languagepicker">
           <button class="languagebtn">Vælg sprog</button>
           <div class="languagepicker-content">
-            <a href="/website/htmlcourse/html/htmltags/htmltagsen.html"><img class="languageflags" src="/website/images/uk-flag.png"></a>
-            <a href="/website/htmlcourse/html/htmltags/htmltagsdk.html"><img class="languageflags" src="/website/images/danish-flag.png"></a>
+            <a href="/website/htmlcourse/html/introduction/introduction-en.html"><img class="languageflags" src="/website/images/uk-flag.png"></a>
+            <a href="/website/htmlcourse/html/introduction/introduction-dk.html"><img class="languageflags" src="/website/images/danish-flag.png"></a>
           </div>
         </div>
       </div>
 
     <div id="text">
+      <div id="small-headline"><h6>INTRODUKTION TIL HTML 1/16</h6></div>
       <h2>Introduktion til HTML</h2>
       <br>
       <div class="text-content">
@@ -71,11 +72,12 @@
       </div>
         
       <img id="advance-arrow" src="/website/images/advance-arrow.png" onclick="moveon()">
+      <img id="reverse-arrow" src="/website/images/advance-arrow.png" onclick="goback()">
       <img id="hint" src="/website/images/magnifying-glass.png" onclick="hint()">
     </div>
 
     <div class="code-area">
-        <textarea id="htmlcode" placeholder="HTML Code Editor" oninput="showpreview()"></textarea>
+        <textarea id="htmlcode" placeholder="HTML Code Editor" oninput="showpreview()"><p></p></textarea>
         <!-- <textarea id="csscode" placeholder="CSS code" oninput="showpreview()"></textarea>
         <textarea id="jscode" placeholder="JavaScript code" oninput="showpreview()"></textarea> -->
     </div>

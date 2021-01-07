@@ -33,8 +33,3 @@
       </div>
   </body>
 </html>
-
-
-
-<h1> hello cunt</h1>
-<button onclick="changeH1()">Change header</button>

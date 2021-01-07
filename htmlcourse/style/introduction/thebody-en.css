@@ -118,7 +118,10 @@ ul {
     height: 100%;
 }
 
-
+#small-headline {
+    color: #666;
+    display: inline;
+}
 
 #text {
     background-color: #f3f3f3;
@@ -145,17 +148,21 @@ ul {
 }
 
 .code-area {
+    background-color: #211e2f;
     display: flex;
     flex-direction: column;
     width: 56%;
     height: 58%;
-    border: 1px solid #000;
+    border: 1px solid #211e2f;
     border-radius: 15px;
     float: right;
     margin-right: 1%;
 }
 
 .code-area textarea {
+    background-color: #211e2f;
+    border: 1px solid #211e2f;
+    color: #afaeae;
     resize: none;
     outline: none;
     width: 100%;
@@ -194,12 +201,23 @@ ul {
     cursor: pointer;
 }
 
+#reverse-arrow {
+    width: 12%;
+    height: 9.5%;
+    float: left;
+    margin-top: 5.5%;
+}
+
+#reverse-arrow:hover {
+    cursor: pointer;
+}
+
 #hint {
     display: none;
     width: 12%;
     height: 9.5%;
     float: left;
-    margin-top: 5.5%;
+    margin: 5.5% 0 0 2%;
 }
 
 #hint:hover {
@@ -241,10 +259,15 @@ input[type=checkbox]:checked:after {
 }
 
 #instructions {
-    height: 11%;
+    height: auto;
     border: 2px solid #000;
     padding: 0 1% 0 1%;
     margin-top: 3%;
+    padding: 2%;
+}
+
+#instructions b {
+    background-color: #e9e9e9bb;
 }
 
 .assignments {
@@ -265,4 +288,34 @@ input[type=checkbox]:checked:after {
 [type="checkbox"]
 {
     vertical-align: baseline;
+}
+
+#htmlquote {
+    margin-top: 3%;
+    margin-left: 20%;
+}
+
+.ht3spcontainer {
+    color: #fff;
+    background-color: #211e2f;
+    font-size: 16px;
+    width: 50%;
+    height: 20%;
+    padding: 2%;
+}
+
+.ht3sp {
+    color: #ff0077;
+}
+
+#ht3spca {
+   
+}
+
+#ht3spcb {
+    margin: 2% 0 1% 6%;
+}
+
+.ht3spi {
+    text-indent: 5%;
 }

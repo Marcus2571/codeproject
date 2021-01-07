@@ -118,6 +118,11 @@ ul {
     height: 100%;
 }
 
+#small-headline {
+    color: #666;
+    display: inline;
+}
+
 #text {
     background-color: #f3f3f3;
     color: #000;
@@ -155,6 +160,17 @@ ul {
 }
 
 #advance-arrow:hover {
+    cursor: pointer;
+}
+
+#reverse-arrow {
+    width: 12%;
+    height: 9.5%;
+    float: left;
+    margin-top: 5.5%;
+}
+
+#reverse-arrow:hover {
     cursor: pointer;
 }
 
