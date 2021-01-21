@@ -4,7 +4,8 @@ const wanted = `<body>
   <div>
     <p>This paragraph is a child of the div element and a grandchild of the body element</p>
   </div>
-</body>`
+</body>
+`
 
 const delay = 1;
 

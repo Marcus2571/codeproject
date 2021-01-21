@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to HTML</title>
+    <link rel="stylesheet" type="text/css" href="/website/htmlcourse/style/introduction/navbar-en.css">
+    <script type="text/JavaScript" src="/website/htmlcourse/script/introduction/navbar-en.js"></script>
+</head>
+  <body>
+    <div id="navbar">
+      <a href="/website/index/html/index.html">Code Project</a>
+      <ul>
+        <li>
+          <a href="">Course Library</a>
+          <ul>
+            <li><a href="/website/htmlcourse/html/webdev.html">Web Development</a></li>
+            <li><a href="/website/pythoncourse/html/python.html">Python</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="userform" action="/website/loginsignup/php/signup.php">
+        <input class="loginbutton" type="submit" value="Sign up">
+      </form>
+      <form class="userform" action="/website/loginsignup/php/login.php">
+        <input class="loginbutton" type="submit" value="Log in">
+      </form>
+      <div class="languagepicker">
+        <button class="languagebtn">Select Language</button>
+        <div class="languagepicker-content">
+          <a href="/website/htmlcourse/html/introduction/structure-en.html"><img class="languageflags" src="/website/images/uk-flag.png"></a>
+          <a href="/website/htmlcourse/html/introduction/structure-dk.html"><img class="languageflags" src="/website/images/danish-flag.png"></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="text"> 
+      <h2>How the Navigation menu is Made</h2>
+      <div class="code-area">
+        <textarea id="htmlcode" placeholder="HTML code editor" oninput="showpreview()">
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to HTML</title>
+  <!-- <link rel="stylesheet" type="text/css" href="/website/htmlcourse/style/introduction/navbar-en.css"> -->
+  <!-- <script type="text/JavaScript" src="/website/htmlcourse/script/introduction/navbar-en.js"></script> -->
+  </head>
+  <body>
+    <div id="navbar">
+      <a href="/website/index/html/index.html">Code Project</a>
+      <ul>
+        <li>
+          <a href="">Course Library</a>
+          <ul>
+            <li><a href="/website/htmlcourse/html/webdev.html">Web Development</a></li>
+            <li><a href="/website/pythoncourse/html/python.html">Python</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="userform" action="/website/loginsignup/php/signup.php">
+        <input class="loginbutton" type="submit" value="Sign up">
+      </form>
+      <form class="userform" action="/website/loginsignup/php/login.php">
+        <input class="loginbutton" type="submit" value="Log in">
+      </form>
+      <div class="languagepicker">
+        <button class="languagebtn">Select Language</button>
+        <div class="languagepicker-content">
+          <a href="/website/htmlcourse/html/introduction/introduction-en.html"><img class="languageflags" src="/website/images/uk-flag.png"></a>
+          <a href="/website/htmlcourse/html/introduction/introduction-dk.html"><img class="languageflags" src="/website/images/danish-flag.png"></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+        </textarea>
+        <textarea id="csscode" placeholder="CSS code" oninput="showpreview()">
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+        
+body {
+  background-color: #3d3d3d;
+  height: 850px;
+}
+      
+#navbar {
+  background-color: #3d3d3d;
+  /* overflow: hidden; */
+  /* position: fixed; */
+  top: 0%;
+  width: 100%;
+  box-shadow: 0px 5px 50px #000;
+  margin-bottom: 2%;
+}
+        
+div a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  display: inline-block;
+}
+        
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+        
+#navbar ul li {display: inline-block;}
+  
+#navbar ul li:hover {background: #555;}
+  
+#navbar ul li:hover ul {display: block;}
+  
+#navbar ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+  z-index: 4;
+}
+  
+#navbar ul li ul li { 
+  background: #555; 
+  display: block; 
+}
+  
+#navbar ul li ul li a {display:block !important;} 
+  
+#navbar ul li ul li:hover {background: #666;}
+
+.userform {
+  float: right;
+}
+  
+.loginbutton {
+  width: 75px;
+  height: 30px;
+  margin: 10px 5px 5px 5px;
+  box-shadow: 0 2px 10px #000;
+  cursor: pointer;
+}
+  
+ ul input:hover {
+  background-color: #f3f3f3bb;  
+}
+
+/* Dropdown Button */
+.languagebtn {
+  background-color: #3d3d3d;
+  color: white;
+  padding: 16px;
+  font-size: 18px;
+  border: none;
+}
+  
+/* The container <div> - needed to position the dropdown content */
+.languagepicker {
+  position: relative;
+  display: inline-block;
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.languagepicker-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+  
+/* Links inside the dropdown */
+.languagepicker-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+  
+/* Change color of dropdown links on hover */
+.languagepicker-content a:hover {background-color: #ddd;}
+  
+/* Show the dropdown menu on hover */
+.languagepicker:hover .languagepicker-content {display: block;}
+  
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.languagepicker:hover .languagebtn {background-color: #555;}
+
+.languageflags {
+  width: 100%;
+  height: 100%;
+}
+        </textarea>
+        <textarea id="jscode" placeholder="JavaScript code" oninput="showpreview()"></textarea>
+      </div>
+      <img id="advance-arrow" src="/website/images/advance-arrow.png" onclick="moveon()">
+      <img id="reverse-arrow" src="/website/images/advance-arrow.png" onclick="goback()">
+    </div>
+
+      <div class="preview-area">
+        <iframe id="preview-window-html"></iframe>
+        <iframe id="preview-window-css"></iframe>
+        <!-- <iframe id="preview-window-js"></iframe> -->
+      </div>
+  </body>
+</html>
