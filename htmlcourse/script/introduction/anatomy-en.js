@@ -1,7 +1,7 @@
-function moveon() {
-    window.location.href = '/website/htmlcourse/html/introduction/thebody-en.html';
-}
+const backUrl = 'introduction-en.html';
 
-function goback() {
-    window.location.href="/website/htmlcourse/html/introduction/introduction-en.html"
+const nextUrl = '/website/htmlcourse/html/introduction/thebody-en.html';
+
+function moveon() {
+    window.location.href = nextUrl;
 }

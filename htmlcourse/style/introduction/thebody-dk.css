@@ -172,6 +172,11 @@ ul {
     border-radius: 15px;
 }
 
+div.CodeMirror {
+    height: 100%;
+    border-radius: 15px;
+}
+
 .preview-area {
     background-color: #fff;
     width: 56%;

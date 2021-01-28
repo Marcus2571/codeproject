@@ -1,38 +1,14 @@
-const wanted = '<body><p>"Live as if you were to die tomorrow. Learn as if you were to live forever."- Mahatma Gandhi</p></body>'
+const wanted = `<body>
+  <h1>Hello World</h1>
 
-const wanted2 = `<body>
-  <p>"Live as if you were to die tomorrow. Learn as if you were to live forever."- Mahatma Gandhi</p>
-</body>`
+  <div>
+    <p>This paragraph is a child of the div element and a grandchild of the body element</p>
+  </div>
+</body>
+`
 
-const delay = 1;
+const nextUrl = 'headings-dk.html'
 
-function moveon() {
-    let code = document.getElementById("htmlcode");
-    if (code.value == wanted || code.value == wanted2){
-        window.location.href = '/website/htmlcourse/html/introduction/structure-dk.html';
-    } else {
-        document.getElementById("hint").style.display="block";
-        setTimeout(function() {
-            confirm('Forkert! Hvis du vil have et hint, så tryk på forstørrelsesglasset i nederste venstre hjørne');
-        }, delay);
-    }
-}
+const backUrl = 'thebody-dk.html'
 
-function hint() {
-    alert('Sørg for at du har din paragraf som barn til div tagget med to indryk, og at der ikke er mellemrum fra dine p tags til din tekst')
-}
-
-function goback() {
-    window.location.href="/website/htmlcourse/html/introduction/thebody-dk.html"
-}
-
-function showpreview() {
-    var htmlCode = document.getElementById("htmlcode").value;
-    // var cssCode = "<style>"+document.getElementById("csscode").value+"</style>";
-    // var jsCode = "<scri"+"pt>"+document.getElementById("jscode").value+"</scri"+"pt>";
-    var frame = document.getElementById("preview-window").contentWindow.document;
-    frame.open();
-    frame.write(htmlCode);
-    // frame.write(htmlCode+cssCode+jsCode);
-    frame.close();
-}
+const hintValue = 'Sørg for at du har din paragraf som barn til div tagget med to indryk, og at der ikke er mellemrum fra dine p tags til din tekst'
