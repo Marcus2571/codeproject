@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction to HTML</title>
+    <link rel="stylesheet" type="text/css" href="/website/htmlcourse/style/introduction/base-en.css">
     <link rel="stylesheet" type="text/css" href="/website/htmlcourse/style/introduction/anatomy-en.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.css"></link>
-    <link rel="stylesheet" type="text/css" href="/website/codemirror-5.59.2/theme/material-darker.css">
+    <link rel="stylesheet" type="text/css" href="/website/codemirror/theme/material-darker.css">
   </head>
   <body>
     <div id="navbar">
@@ -41,14 +42,14 @@
       <br>
       <div class="text-content">
         <p>HTML is composed of elements. These elements structure the webpage and define its content. Let’s take a look at how they’re written.<br><br>
-          The diagram to the right displays an HTML paragraph element. As we can see, the paragraph element is made up of:<br><br>
+          The diagram to the right displays an HTML paragraph element. As we can see, the paragraph element is made up of:</p><br><br>
           <ul>
             <li>An opening tag (<b>&lt;p&gt;</b>)</li><br>
             <li>The content (“Hello World!” text)</li><br>
             <li>A closing tag (<b>&lt;/p&gt;</b>)</li><br>
           </ul>
-          A <em>tag</em> and the content between it is called an HTML element. There are many tags that we can use to organize and display text and other types of content, 
-          like images.<br><br>Let’s quickly review each part of the element pictured:<br><br>
+          <p>A <em>tag</em> and the content between it is called an HTML element. There are many tags that we can use to organize and display text and other types of content, 
+          like images.<br><br>Let’s quickly review each part of the element pictured:</p><br><br>
           <ul>
             <li>HTML element (or simply, element) — a unit of content in an HTML document formed by HTML tags and the text or media it contains.</li><br>
             <li>HTML Tag — the element name, surrounded by an opening (<b>&lt;</b>) and closing (<b>&gt;</b>) angle bracket.</li><br>
@@ -56,7 +57,6 @@
             <li>Content — The information (text or other elements) contained between the opening and closing tags of an HTML element.</li><br>
             <li>Closing tag — the second HTML tag used to end an HTML element. Closing tags have a forward slash (<b>/</b>) inside of them, directly after the left angle bracket.</li><br>
           </ul>
-        </p>
       </div>
       
       <div id="instructions">
@@ -69,12 +69,14 @@
           </li>
         </ul>
       </div>
-      
-      <img id="advance-arrow" src="/website/images/advance-arrow.png" onclick="moveon()">
-      <img id="reverse-arrow" src="/website/images/advance-arrow.png" onclick="goback()">
     </div>
     
     <img id="html-diagram" src="https://content.codecademy.com/courses/learn-html/elements-and-structure/html%20lesson%20image.svg">
+
+    <div id="bottom-bar">
+      <img id="reverse-arrow" src="/website/images/advance-arrow.png" onclick="goback()">
+      <img id="advance-arrow" src="/website/images/advance-arrow.png" onclick="moveon()">
+    </div>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/mode/xml/xml.min.js"></script>

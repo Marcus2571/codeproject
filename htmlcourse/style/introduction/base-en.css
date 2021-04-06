@@ -246,7 +246,7 @@ input[type=checkbox]:checked:after {
 }
 
 #instructions {
-    height: 10%;
+    height: auto;
     border: 2px solid #000;
     margin-top: 3%;
 }

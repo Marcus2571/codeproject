@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction to HTML</title>
+    <link rel="stylesheet" type="text/css" href="/website/htmlcourse/style/introduction/base-en.css">
     <link rel="stylesheet" type="text/css" href="/website/htmlcourse/style/introduction/introduction-en.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.css"></link>
-    <link rel="stylesheet" type="text/css" href="/website/codemirror-5.59.2/theme/material-darker.css">
+    <link rel="stylesheet" type="text/css" href="/website/codemirror/theme/material-darker.css">
   </head>
   <body>
     <div id="navbar">
@@ -70,20 +71,22 @@
               </li>
             </ul>
           </div>
-          
-          <img id="advance-arrow" src="/website/images/advance-arrow.png" onclick="moveon()">
-          <img id="reverse-arrow" src="/website/images/advance-arrow.png" onclick="goback()">
-          <img id="hint" src="/website/images/magnifying-glass.png" onclick="hint()">
         </div>
         
         <div class="code-area">
-          <textarea id="htmlcode" placeholder="HTML code editor" oninput="showpreview()"><p></p></textarea>
+          <textarea id="htmlcode" placeholder="HTML code editor" oninput="showpreview()">&lt;p&gt;&lt;/p&gt;</textarea>
           <!-- <textarea id="csscode" placeholder="CSS code" oninput="showpreview()"></textarea>
             <textarea id="jscode" placeholder="JavaScript code" oninput="showpreview()"></textarea> -->
           </div>
           
           <div class="preview-area">
             <iframe id="preview-window"></iframe>
+          </div>
+
+          <div id="bottom-bar">
+            <img id="reverse-arrow" src="/website/images/advance-arrow.png" onclick="goback()">
+            <img id="advance-arrow" src="/website/images/advance-arrow.png" onclick="moveon()">
+            <button id="hint" onclick="hint()">Hint</button>
           </div>
           
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js"></script>

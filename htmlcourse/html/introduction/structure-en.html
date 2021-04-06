@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction to HTML</title>
+    <link rel="stylesheet" type="text/css" href="/website/htmlcourse/style/introduction/base-en.css">
     <link rel="stylesheet" type="text/css" href="/website/htmlcourse/style/introduction/structure-en.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.css">
-    <link rel="stylesheet" type="text/css" href="/website/codemirror-5.59.2/theme/material-darker.css">
+    <link rel="stylesheet" type="text/css" href="/website/codemirror/theme/material-darker.css">
   </head>
   <body>
     <div id="navbar">
@@ -43,6 +44,7 @@
         <p>
           HTML is organized as a collection of family tree relationships. As you saw in the last exercise, I placed <b>&lt;p&gt;</b> tags within <b>&lt;body&gt;</b> tags. 
           When an element is contained inside another element, it is considered the child of that element. The child element is said to be nested inside of the parent element. 
+        </p>
           <br><br> 
           <div class="ht3spcontainer">
             <span class="ht3sp">&lt;body&gt;</span><br>
@@ -50,6 +52,7 @@
             <span class="ht3sp">&lt;/body&gt;</span>
           </div>
           <br>
+          <p></p>
           In the example above, the <b>&lt;p&gt;</b> element is nested inside the <b>&lt;body&gt;</b> element. The <b>&lt;p&gt;</b> element is considered a child of the 
           <b>&lt;body&gt;</b> element, and the <b>&lt;body&gt;</b> element is considered the parent. You can also see that I've added two spaces of indentation 
           (using the <b>space</b> bar) for better readability.<br><br> Since there can be multiple levels of nesting, this analogy can be extended to grandchildren, 
@@ -86,21 +89,17 @@
                 </li>
               </ul>
             </div>
-            
-            <img id="advance-arrow" src="/website/images/advance-arrow.png" onclick="moveon()">
-            <img id="reverse-arrow" src="/website/images/advance-arrow.png" onclick="goback()">
-            <img id="hint" src="/website/images/magnifying-glass.png" onclick="hint()">
           </div>
           
           <div class="code-area">
             <textarea id="htmlcode" placeholder="HTML code editor" oninput="showpreview()" rows="number">
-<body>
-  <h1>Hello World</h1>
+&lt;body&gt;
+  &lt;h1&gt;Hello World&lt;/h1&gt;
 
-  <div>
+  &lt;div&gt;
 
-  </div>  
-</body>
+  &lt;/div&gt;
+&lt;/body&gt;
 </textarea>
             <!-- <textarea id="csscode" placeholder="CSS code" oninput="showpreview()"></textarea>
               <textarea id="jscode" placeholder="JavaScript code" oninput="showpreview()"></textarea> -->
@@ -109,6 +108,12 @@
             <div class="preview-area">
               <iframe id="preview-window"></iframe>
             </div>
+
+      <div id="bottom-bar">
+        <img id="reverse-arrow" src="/website/images/advance-arrow.png" onclick="goback()">
+        <img id="advance-arrow" src="/website/images/advance-arrow.png" onclick="moveon()">
+        <button id="hint" onclick="hint()">Hint</button>
+      </div>
             
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/mode/xml/xml.min.js"></script>

@@ -16,13 +16,13 @@ const codemirror = CodeMirror.fromTextArea(document.querySelector('#htmlcode'), 
 const delay = 1;
 
 function moveon() {
-    let code = codemirror.getValue();
-    if (code == wanted){
+    let code = codemirror.getValue().replace(/\s/g, "");;
+    if (code == wanted.replace(/\s/g, "")){
         window.location.href = baseUrl+nextUrl;
     } else {
         document.getElementById("hint").style.display="block";
         setTimeout(function() {
-            confirm('Forkert! Hvis du vil have et hint, så tryk på forstørrelsesglasset i nederste venstre hjørne');
+            confirm('Forkert! Hvis du vil have et hint, så tryk på Hint knappen');
         }, delay);
     }
 }
