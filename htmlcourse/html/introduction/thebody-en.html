@@ -78,6 +78,11 @@
             </li>
           </ul>
         </div>
+        <div id="bottom-bar">
+          <img id="reverse-arrow" src="/website/images/advance-arrow.png" onclick="goback()">
+          <img id="advance-arrow" src="/website/images/advance-arrow.png" onclick="moveon()">
+          <button id="hint" onclick="hint()">Hint</button>
+        </div>  
       </div>
       
       <div class="code-area">
@@ -89,12 +94,6 @@
         <div class="preview-area">
           <iframe id="preview-window"></iframe>
         </div>
-        
-      <div id="bottom-bar">
-        <img id="reverse-arrow" src="/website/images/advance-arrow.png" onclick="goback()">
-        <img id="advance-arrow" src="/website/images/advance-arrow.png" onclick="moveon()">
-        <button id="hint" onclick="hint()">Hint</button>
-      </div>
         
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/mode/xml/xml.min.js"></script>
