@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduktion til HTML</title>
+    <link rel="stylesheet" type="text/css" href="/website/htmlcourse/style/introduction/base-dk.css">
+    <link rel="stylesheet" type="text/css" href="/website/htmlcourse/style/introduction/introduction-dk.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.css"></link>
+    <link rel="stylesheet" type="text/css" href="/website/codemirror/theme/material-darker.css">
+  </head>
+  <body>
+    <div id="navbar">
+      <a href="/website/index/html/index.html">Code Project</a>
+      <ul>
+        <li>
+          <a href="">Course Library</a>
+          <ul>
+            <li><a href="/website/htmlcourse/html/webdev.html">Web Development</a></li>
+            <li><a href="/website/pythoncourse/html/python.html">Python</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="userform" action="/website/loginsignup/php/signup.php">
+        <input class="loginbutton" type="submit" value="Sign up">
+      </form>
+      <form class="userform" action="/website/loginsignup/php/login.php">
+        <input class="loginbutton" type="submit" value="Log in">
+      </form>
+      <div class="languagepicker">
+        <button class="languagebtn">Vælg sprog</button>
+        <div class="languagepicker-content">
+          <a href="/website/htmlcourse/html/introduction/introduction-en.html"><img class="languageflags" src="/website/images/uk-flag.png"></a>
+          <a href="/website/htmlcourse/html/introduction/introduction-dk.html"><img class="languageflags" src="/website/images/danish-flag.png"></a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="text">
+      <div id="small-headline"><h6>INTRODUKTION TIL HTML 1/16</h6></div>
+      <h2>Introduktion til HTML</h2>
+      <br>
+      <div class="text-content">
+        <p>Velkommen til kodningens verden! Sidste år, startede millioner af mennesker med HTML. Hvorfor? Spørger du måske. HTML er alle hjemmesiders skelet.
+          Det er ofte det første sprog der læres af, udviklere, marketingfolk og designere, og det er kernen i front-end udviklingsarbejde. Hvis dette er første gang du rører 
+          ved kode, er jeg spændt på, hvad du kommer til at udrette.
+          <br><br>
+          Så hvad er HTML nøjagtigt? HTML giver struktur til det indhold, der vises på et websted, såsom billeder, tekst eller videoer. Højreklik på en vilkårlig side på 
+          internettet, vælg "Inspicer", og du vil se HTML i et panel på din skærm.
+          <br><br>
+          HTML står for HyperText Markup Language:
+          <br><br>
+          <ul>
+            <li>Et markup- sprog er et computersprog, der definerer strukturen og præsentationen af ​​rå tekst.</li><br>
+            <li>I HTML kan computeren fortolke rå tekst, der er pakket i HTML-elementer.</li><br>
+            <li>HyperText er tekst, der vises på en computer eller enhed, der giver adgang til anden tekst gennem links, også kendt som hyperlinks. 
+              Du har sandsynligvis klikket på et par hyperlinks på vej til dette CodeProject-kursus.</li><br><br>
+            </ul>
+            At lære HTML er det første skridt i oprettelsen af ​​websteder, men selv en smule viden kan hjælpe dig med at indsætte kodestykker 
+            i nyhedsbreve, blog eller webstedsskabeloner. Når du fortsætter med at lære, kan du lag HTML med CSS og JavaScript for at skabe visuelt overbevisende 
+            og dynamiske websteder. Men for nu vil vi fokusere på, hvordan man tilføjer og ændrer grundlæggende indhold på en side som tekst, billeder og videoer. 
+            Bare rolig, hvis hjemmesiderne ser grimme ud - vi er kun lige ved at komme i gang.</p>
+          </div>
+          
+          <div id="instructions">
+            <ul class="assignments">
+              <li>
+                <label id="assignment2label" for="assignment2"  style="word-wrap:break-word">
+                  <input id="assignment2"  type="checkbox" value="test" />
+                  I kode editoren til til højre, skriv "Nu har jeg lært at lave et paragraf tag i html" imellem &lt;p&gt; og &lt;/p&gt;, så tryk på den blå pil.
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div id="bottom-bar">
+            <img id="reverse-arrow" src="/website/images/advance-arrow.png" onclick="goback()">
+            <img id="advance-arrow" src="/website/images/advance-arrow.png" onclick="moveon()">
+            <button id="hint" onclick="hint()">Hint</button>
+          </div>
+        </div>
+        
+        <div class="code-area">
+          <textarea id="htmlcode" placeholder="HTML Code Editor" oninput="showpreview()">&lt;p&gt;&lt;/p&gt;</textarea>
+          <!-- <textarea id="csscode" placeholder="CSS code" oninput="showpreview()"></textarea>
+            <textarea id="jscode" placeholder="JavaScript code" oninput="showpreview()"></textarea> -->
+          </div>
+          
+          <div class="preview-area">
+            <iframe id="preview-window"></iframe>
+          </div>
+
+          
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/mode/xml/xml.min.js"></script>
+    <script type="text/JavaScript" src="/website/htmlcourse/script/introduction/introduction-dk.js"></script>
+    <script type="text/JavaScript" src="/website/htmlcourse/script/introduction/base-dk.js"></script>
+  </body>
+</html>

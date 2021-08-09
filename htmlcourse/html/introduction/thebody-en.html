@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to HTML</title>
+    <link rel="stylesheet" type="text/css" href="/website/htmlcourse/style/introduction/base-en.css">
+    <link rel="stylesheet" type="text/css" href="/website/htmlcourse/style/introduction/thebody-en.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.css"></link>
+    <link rel="stylesheet" type="text/css" href="/website/codemirror/theme/material-darker.css">
+  </head>
+  <body>
+    <div id="navbar">
+      <a href="/website/index/html/index.html">Code Project</a>
+      <ul>
+        <li>
+          <a href="">Course Library</a>
+          <ul>
+            <li><a href="/website/htmlcourse/html/webdev.html">Web Development</a></li>
+            <li><a href="/website/pythoncourse/html/python.html">Python</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="userform" action="/website/loginsignup/php/signup.php">
+        <input class="loginbutton" type="submit" value="Sign up">
+      </form>
+      <form class="userform" action="/website/loginsignup/php/login.php">
+        <input class="loginbutton" type="submit" value="Log in">
+      </form>
+      <div class="languagepicker">
+        <button class="languagebtn">Select Language</button>
+        <div class="languagepicker-content">
+          <a href="/website/htmlcourse/html/introduction/thebody-en.html"><img class="languageflags" src="/website/images/uk-flag.png"></a>
+          <a href="/website/htmlcourse/html/introduction/thebody-dk.html"><img class="languageflags" src="/website/images/danish-flag.png"></a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="text">
+      <div id="small-headline"><h6>INTRODUCTION TO HTML 3/16</h6></div>
+      <h2>The Body</h2>
+      <br>
+      <div class="text-content">
+        <p>One of the key HTML elements we use to build a webpage is the body element. Only content inside the opening and closing body tags can be displayed to the screen. 
+          Here’s what opening and closing body tags look like: <br><br> 
+          <div class="ht3spcontainer">
+            <span class="ht3sp">&lt;body&gt;</span><br><br>
+            <span class="ht3sp">&lt;/body&gt;</span>
+          </div>
+          <br>
+          Once the file has a body, many different types of content – including text, images, and buttons – can be added to the body.<br><br>
+          <div class="ht3spcontainer" id="ht3spca">
+            <span class="ht3sp">&lt;body&gt;</span><br>
+            <div class="ht3spi"><span class="ht3sp">&lt;p&gt;</span><span>What's up, doc?</span><span class="ht3sp">&lt;/p&gt;</span></div>
+            <span class="ht3sp">&lt;/body&gt;</span>
+          </div>
+          <br>
+        </div>
+        
+        <div id="instructions">
+          <ul class="assignments">
+            <li>
+              <label id="assignment2label" for="assignment2"  style="word-wrap:break-word">
+                <input id="assignment2"  type="checkbox" value="test" />
+                <span>Add a body to your web page using the <b>&lt;body&gt;</b> element.</span>
+              </label>
+            </li>
+            <li>
+              <label id="assignment2label" for="assignment2"  style="word-wrap:break-word">
+                <input id="assignment2"  type="checkbox" value="test" />
+                <span>Add the following code between your opening and closing body tags:</span>
+              </label>
+              <div class="ht3spcontainer" id="ht3spcb">
+                <span class="ht3sp">&lt;p&gt;</span>
+                <span>"Live as if you were to die tomorrow. Learn as if you were to live forever."- Mahatma Gandhi</span>
+                <span class="ht3sp">&lt;/p&gt;</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="bottom-bar">
+          <img id="reverse-arrow" src="/website/images/advance-arrow.png" onclick="goback()">
+          <img id="advance-arrow" src="/website/images/advance-arrow.png" onclick="moveon()">
+          <button id="hint" onclick="hint()">Hint</button>
+        </div>  
+      </div>
+      
+      <div class="code-area">
+        <textarea id="htmlcode" placeholder="HTML code editor" oninput="showpreview()"></textarea>
+        <!-- <textarea id="csscode" placeholder="CSS code" oninput="showpreview()"></textarea>
+          <textarea id="jscode" placeholder="JavaScript code" oninput="showpreview()"></textarea> -->
+        </div>
+        
+        <div class="preview-area">
+          <iframe id="preview-window"></iframe>
+        </div>
+        
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/mode/xml/xml.min.js"></script>
+    <script type="text/JavaScript" src="/website/htmlcourse/script/introduction/thebody-en.js"></script>
+    <script type="text/JavaScript" src="/website/htmlcourse/script/introduction/base-en.js"></script>
+  </body>
+</html>

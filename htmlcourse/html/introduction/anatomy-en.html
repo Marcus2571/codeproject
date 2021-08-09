@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to HTML</title>
+    <link rel="stylesheet" type="text/css" href="/website/htmlcourse/style/introduction/base-en.css">
+    <link rel="stylesheet" type="text/css" href="/website/htmlcourse/style/introduction/anatomy-en.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.css"></link>
+    <link rel="stylesheet" type="text/css" href="/website/codemirror/theme/material-darker.css">
+  </head>
+  <body>
+    <div id="navbar">
+      <a href="/website/index/html/index.html">Code Project</a>
+      <ul>
+        <li>
+          <a href="">Course Library</a>
+          <ul>
+            <li><a href="/website/htmlcourse/html/webdev.html">Web Development</a></li>
+            <li><a href="/website/pythoncourse/html/python.html">Python</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="userform" action="/website/loginsignup/php/signup.php">
+        <input class="loginbutton" type="submit" value="Sign up">
+      </form>
+      <form class="userform" action="/website/loginsignup/php/login.php">
+        <input class="loginbutton" type="submit" value="Log in">
+      </form>
+      <div class="languagepicker">
+        <button class="languagebtn">Select Language</button>
+        <div class="languagepicker-content">
+          <a href="/website/htmlcourse/html/introduction/anatomy-en.html"><img class="languageflags" src="/website/images/uk-flag.png"></a>
+          <a href="/website/htmlcourse/html/introduction/anatomy-dk.html"><img class="languageflags" src="/website/images/danish-flag.png"></a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="text">
+      <div id="small-headline"><h6>INTRODUCTION TO HTML 2/16</h6></div>
+      <h2>HTML Anatomy</h2>
+      <br>
+      <div class="text-content">
+        <p>HTML is composed of elements. These elements structure the webpage and define its content. Let’s take a look at how they’re written.<br><br>
+          The diagram to the right displays an HTML paragraph element. As we can see, the paragraph element is made up of:</p><br><br>
+          <ul>
+            <li>An opening tag (<b>&lt;p&gt;</b>)</li><br>
+            <li>The content (“Hello World!” text)</li><br>
+            <li>A closing tag (<b>&lt;/p&gt;</b>)</li><br>
+          </ul>
+          <p>A <em>tag</em> and the content between it is called an HTML element. There are many tags that we can use to organize and display text and other types of content, 
+          like images.<br><br>Let’s quickly review each part of the element pictured:</p><br><br>
+          <ul>
+            <li>HTML element (or simply, element) — a unit of content in an HTML document formed by HTML tags and the text or media it contains.</li><br>
+            <li>HTML Tag — the element name, surrounded by an opening (<b>&lt;</b>) and closing (<b>&gt;</b>) angle bracket.</li><br>
+            <li>Opening Tag — the first HTML tag used to start an HTML element. The tag type is surrounded by opening and closing angle brackets.</li><br>
+            <li>Content — The information (text or other elements) contained between the opening and closing tags of an HTML element.</li><br>
+            <li>Closing tag — the second HTML tag used to end an HTML element. Closing tags have a forward slash (<b>/</b>) inside of them, directly after the left angle bracket.</li><br>
+          </ul>
+        </div>
+        
+        <div id="instructions">
+          <ul class="assignments">
+            <li>
+              <label id="assignment2label" for="assignment2"  style="word-wrap:break-word">
+                <input id="assignment2"  type="checkbox" value="test" />
+                Study the diagram to the right to learn about the anatomy of HTML syntax. When you’re done, continue to the next exercise.
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div id="bottom-bar">
+          <img id="reverse-arrow" src="/website/images/advance-arrow.png" onclick="goback()">
+          <img id="advance-arrow" src="/website/images/advance-arrow.png" onclick="moveon()">
+        </div>
+    </div>
+    
+    <img id="html-diagram" src="https://content.codecademy.com/courses/learn-html/elements-and-structure/html%20lesson%20image.svg">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/mode/xml/xml.min.js"></script>
+    <script type="text/JavaScript" src="/website/htmlcourse/script/introduction/anatomy-en.js"></script>
+    <!-- <script type="text/JavaScript" src="/website/htmlcourse/script/introduction/base-en.js"></script> -->
+  </body>
+</html>

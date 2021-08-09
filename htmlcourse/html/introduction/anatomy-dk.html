@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduktion til HTML</title>
+    <link rel="stylesheet" type="text/css" href="/website/htmlcourse/style/introduction/base-dk.css">
+    <link rel="stylesheet" type="text/css" href="/website/htmlcourse/style/introduction/anatomy-dk.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.css"></link>
+    <link rel="stylesheet" type="text/css" href="/website/codemirror/theme/material-darker.css">
+  </head>
+  <body>
+    <div id="navbar">
+      <a href="/website/index/html/index.html">Code Project</a>
+      <ul>
+        <li>
+          <a href="">Course Library</a>
+          <ul>
+            <li><a href="/website/htmlcourse/html/webdev.html">Web Development</a></li>
+            <li><a href="/website/pythoncourse/html/python.html">Python</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="userform" action="/website/loginsignup/php/signup.php">
+        <input class="loginbutton" type="submit" value="Sign up">
+      </form>
+      <form class="userform" action="/website/loginsignup/php/login.php">
+        <input class="loginbutton" type="submit" value="Log in">
+      </form>
+      <div class="languagepicker">
+        <button class="languagebtn">Select Language</button>
+        <div class="languagepicker-content">
+          <a href="/website/htmlcourse/html/introduction/anatomy-en.html"><img class="languageflags" src="/website/images/uk-flag.png"></a>
+          <a href="/website/htmlcourse/html/introduction/anatomy-dk.html"><img class="languageflags" src="/website/images/danish-flag.png"></a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="text">
+      <div id="small-headline"><h6>INTRODUKTION TIL HTML 2/16</h6></div>
+      <h2>HTML Opbygning</h2>
+      <br>
+      <div class="text-content">
+        <p>HTML er sammensat af elementer . Disse elementer strukturerer websiden og definerer dens indhold. Lad os se på, hvordan de er skrevet.<br><br>
+          Diagrammet til højre viser et HTML-afsnitelement. Som vi kan se, består afsnitselementet af:<br><br>
+          <ul>
+            <li>Et <em>åbnings tag</em> (<b>&lt;p&gt;</b>)</li><br>
+            <li>Indholdet (“Hello World!” -Teksten)</li><br>
+            <li>Et <em>afsluttende tag</em> (<b>&lt;/p&gt;</b>)</li><br>
+          </ul>
+          Et <em>tag</em> og indholdet mellem det kaldes et HTML-element. Der er mange tags, som vi kan bruge til at organisere og vise tekst og andre typer indhold, 
+          som f.eks. Billeder.<br><br>Lad os hurtigt gennemgå hver del af det afbildede element:<br><br>
+          <ul>
+            <li>HTML-element (eller simpelthen element) - en enhed af indhold i et HTML-dokument dannet af HTML-tags og den tekst eller det medie det indeholder.</li><br>
+            <li>HTML-tag - elementnavnet omgivet af en åbnings- (<b>&lt;</b>) og lukningsvinkel (<b>&gt;</b>) </li><br>
+            <li>Åbnings tag - det første HTML-tag, der bruges til at starte et HTML-element. Mærketypen er omgivet af åbnings- og lukningsvinkelbeslag.</li><br>
+            <li>Indhold - Oplysningerne (tekst eller andre elementer) indeholdt mellem åbningen og lukningen af ​​et HTML-element.</li><br>
+            <li>Lukning tags - det andet HTML-tag, der bruges til at afslutte et HTML-element. Lukkemærker har en skråstreg fremad (<b>/</b>) 
+              inde i dem lige efter venstre vinkelbeslag.</li><br>
+            </ul>
+          </p>
+        </div>
+        
+        <div id="instructions">
+          <ul class="assignments">
+            <li>
+              <label id="assignment2label" for="assignment2"  style="word-wrap:break-word">
+                <input id="assignment2"  type="checkbox" value="test" />
+                Studer diagrammet til højre for at lære om opbygningen af HTML tags. Når du er færdig, skal du fortsætte til næste øvelse.
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div id="bottom-bar">
+          <img id="reverse-arrow" src="/website/images/advance-arrow.png" onclick="goback()">
+          <img id="advance-arrow" src="/website/images/advance-arrow.png" onclick="moveon()">
+        </div>
+      </div>
+      
+      <img id="html-diagram" src="https://content.codecademy.com/courses/learn-html/elements-and-structure/html%20lesson%20image.svg">
+
+      
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/mode/xml/xml.min.js"></script>
+    <script type="text/JavaScript" src="/website/htmlcourse/script/introduction/anatomy-dk.js"></script>
+    <script type="text/JavaScript" src="/website/htmlcourse/script/introduction/base-dk.js"></script>
+    <!-- <script type="text/JavaScript" src="/website/htmlcourse/script/introduction/base-dk.js"></script> -->
+  </body>
+</html>

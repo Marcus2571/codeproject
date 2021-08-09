@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    background-color: #3d3d3d;
+    height: 850px;
+}
+
+#navbar {
+    background-color: #3d3d3d;
+    /* overflow: hidden; */
+    /* position: fixed; */
+    top: 0%;
+    width: 100%;
+    box-shadow: 0px 5px 50px #000;
+    margin-bottom: 2%;
+}
+  
+div a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    display: inline-block;
+}
+  
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+  
+#navbar ul li {display: inline-block;}
+  
+#navbar ul li:hover {background: #555;}
+  
+#navbar ul li:hover ul {display: block;}
+  
+#navbar ul li ul {
+    position: absolute;
+    width: 200px;
+    display: none;
+    z-index: 4;
+}
+  
+#navbar ul li ul li { 
+    background: #555; 
+    display: block; 
+}
+  
+#navbar ul li ul li a {display:block !important;} 
+  
+#navbar ul li ul li:hover {background: #666;}
+
+.userform {
+    float: right;
+}
+  
+.loginbutton {
+    width: 75px;
+    height: 30px;
+    margin: 10px 5px 5px 5px;
+    box-shadow: 0 2px 10px #000;
+    cursor: pointer;
+}
+  
+ ul input:hover {
+    background-color: #f3f3f3bb;  
+}
+
+/* Dropdown Button */
+.languagebtn {
+    background-color: #3d3d3d;
+    color: white;
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+}
+  
+/* The container <div> - needed to position the dropdown content */
+.languagepicker {
+    position: relative;
+    display: inline-block;
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.languagepicker-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+/* Links inside the dropdown */
+.languagepicker-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+  
+/* Change color of dropdown links on hover */
+.languagepicker-content a:hover {background-color: #ddd;}
+  
+/* Show the dropdown menu on hover */
+.languagepicker:hover .languagepicker-content {display: block;}
+  
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.languagepicker:hover .languagebtn {background-color: #555;}
+
+.languageflags {
+    width: 100%;
+    height: 100%;
+}
+
+#small-headline {
+    color: #666;
+    display: inline;
+}
+
+#text {
+    background-color: #f3f3f3;
+    color: #000;
+    font-family: Calibri, sans-serif, times, arial;
+    font-size: 20px;
+    padding: 0.5% 1.5% 0 1.5%;
+    width: 40%;
+    height: 100%;
+    line-height: 23px;
+    float: left;
+    border: 1px solid #000;
+    border-radius: 15px;
+    margin: 0 0 1% 1%;
+    overflow-y: scroll;
+}
+
+#text::-webkit-scrollbar {
+    width: 0;
+}
+
+.text-content ul li {
+    margin-left: 3%;
+}
+
+.code-area {
+    background-color: #211e2f;
+    display: flex;
+    flex-direction: column;
+    width: 56%;
+    height: 58%;
+    border: 1px solid #211e2f;
+    border-radius: 15px;
+    float: right;
+    margin-right: 1%;
+}
+
+.code-area textarea {
+    background-color: #211e2f;
+    border: 1px solid #211e2f;
+    color: #afaeae;
+    resize: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+div.CodeMirror {
+    height: 100%;
+    border-radius: 15px;
+}
+
+.preview-area {
+    background-color: #fff;
+    width: 56%;
+    height: 40%;
+    float: right;
+    margin-right: 1%;
+    margin-top: 1%;
+    border-radius: 15px;
+}
+
+.preview-area iframe {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.preview-area {
+    background-color: #fff;
+    width: 56%;
+    height: 40%;
+    float: right;
+    margin-right: 1%;
+    margin-top: 1%;
+    border-radius: 15px;
+}
+
+.preview-area iframe {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+input[type=checkbox] {
+    position: relative;
+      cursor: pointer;
+      margin: 2% 2% 0 2%;
+}
+
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    border: 2px solid #555555;
+    border-radius: 3px;
+    background-color: white;
+}
+
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 6px;
+}
+
+#instructions {
+    height: auto;
+    border: 2px solid #000;
+    margin-top: 3%;
+}
+
+.assignments {
+    list-style: none;
+    text-align: left;
+    font-size: 20px;
+}
+
+.assignments li {
+    display: inline;
+    vertical-align: center;
+}
+
+#assignment2label {
+    display: flex;
+    padding: 2% 0 2% 0;
+}
+
+[type="checkbox"]
+{
+    vertical-align: baseline;
+}
+
+#bottom-bar {
+    height: 7%;
+    background-color: #333333;
+    margin-top: 10%;
+    bottom: 0%;
+    width: 100%;
+    padding: 0.25%;
+    border: 2px solid #000;
+    border-bottom: 0 solid #000;
+}
+
+#advance-arrow {
+    transform: rotate(180deg);
+    width: auto;
+    height: 100%;
+    float: right;
+    position: relative;
+    padding: 0.125%;
+}
+
+#advance-arrow:hover {
+    cursor: pointer;
+}
+
+#reverse-arrow {
+    width: auto;
+    height: 100%;
+    float: left;
+    position: relative;
+    padding: 0.125%;
+}
+
+#reverse-arrow:hover {
+    cursor: pointer;
+}
+
+#hint {
+    display: none;
+    background-color: #d1bd07bb;
+    color: white;
+    /* padding: 5px; */
+    font-size: 20px;
+    border: 3px solid #000;
+    width: 4%;
+    height: 95%;
+    margin-left: 45%;
+    vertical-align: middle;
+}
+
+#hint:hover {
+    cursor: pointer;    
+}

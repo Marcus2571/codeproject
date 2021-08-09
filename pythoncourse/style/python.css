@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+    background-color: #3d3d3d;
+}
+
+
+/* Navbar start */
+#navbar {
+  background-color: #3d3d3d;
+  /* overflow: hidden; */
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  box-shadow: 0 5px 50px #000;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  display:inline-block;
+}
+
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {display: inline-block;}
+ul li:hover {background: #555;}
+ul li:hover ul {display: block;}
+
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+
+ul li ul li { 
+  background: #555; 
+  display: block; 
+}
+
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background: #666;}
+/* Navbar end */
+
+/* Python Basics Box */
+#pythonbasics {
+  background-color: #fff;
+  font-size: 20px;
+  text-align: center;
+  padding: 15px;
+  margin: 5% 875px 15px 875px;
+  border-radius: 15px;
+}
+/*  */
+
+/* Python Advanced Box */
+#pythonadvanced {
+  background-color: #fff;
+  font-size: 17px;
+  text-align: center;
+  padding: 15px;
+  margin: 5% 875px 15px 875px;
+  border-radius: 15px;
+}
+/*  */
+
+/* All Pythonboxes */
+.pythonboxes {
+  font-size: 30px;
+  margin-top: 50px;
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between; /* switched from default (flex-start, see below) */
+}
+/* All Pyhtonboxes end */
+
+/* Left Python box start  */
+ #lpythonbox {
+  margin-left: 10px;
+  background-color: #fff;
+  width: 30%;
+  height: 500px;
+  border-radius: 15px;
+}
+
+#lboxtxt {
+  display:  block;
+  margin-left: 10px;
+}
+
+#lpythonimg {
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+#lstarimg {
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+}
+
+#lredarrow {
+  display: block;
+}
+/* Left python box end */
+
+/* Middle Python box */
+#mpythonbox {
+  background-color: #fff;
+  width: 30%;
+  height: 500px;
+  border-radius: 15px;
+}
+
+#mboxtxt {
+  display:  block;
+  margin-left: 10px;
+}
+
+#mpythonimg {
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+#mstarimg {
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+}
+
+#mredarrow {
+  display: block;
+}
+/* Middle box ends */
+
+/* Right Python box start  */
+#rpythonbox {
+  margin-right: 10px;
+  background-color: #fff;
+  width: 30%;
+  height: 500px;
+  border-radius: 15px;
+}
+
+#rboxtxt {
+  display: block;
+  margin-left: 10px;
+}
+
+#rpythonimg {
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+#rstarimg {
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+}
+
+#rredarrow {
+  display: block;
+}
+/* Right python box end */
+
+/* Image sizes */
+.pythonimgsize {
+  height: 80px;
+  width: 80px;
+}
+
+.starimgsize {
+  height: 40px;
+  width: 40px;
+  margin-top: 11%;
+}
+
+.redarrowsize {
+  margin-left: 25%;
+  margin-top: 10%;
+  width: 350px;
+  height: 214px;
+}
+/* Image sizes end */

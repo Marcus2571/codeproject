@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #3d3d3d;
+  height: 1000px;
+  font-family: Calibri, sans-serif, times, arial;
+}
+
+#navbar {
+  background-color: #3d3d3d;
+  /* overflow: hidden; */
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  box-shadow: 0px 5px 50px #000;
+}
+
+div a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  display: inline-block;
+}
+
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar ul li {display: inline-block;}
+
+#navbar ul li:hover {background: #555;}
+
+#navbar ul li:hover ul {display: block;}
+
+#navbar ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+  z-index: 4;
+}
+
+#navbar ul li ul li { 
+  background: #555; 
+  display: block; 
+}
+
+#navbar ul li ul li a {display:block !important;} 
+
+#navbar ul li ul li:hover {background: #666;}
+
+.userform {
+  float: right;
+}
+
+#loginbutton {
+  width: 75px;
+  height: 30px;
+  margin: 10px 5px 5px 5px;
+  box-shadow: 0 2px 10px #000;
+  cursor: pointer;
+}
+
+ul input:hover {
+  background-color: #f3f3f3bb;
+
+}
+
+#backImg {
+    display: none;
+}
+
+#img1 {
+    height: 250px;
+    max-width: 100%;
+    display: block;
+    position: relative;
+    margin-top: 5%;
+    margin-left: 1%;
+    z-index: -1;
+}
+
+#switchbtn {
+  margin-top: 1%;
+  margin-left: 1%;
+  box-shadow: 0px 1px 90px #000;
+  cursor: pointer;
+}
