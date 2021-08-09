@@ -46,19 +46,6 @@ function showpreview(cm) {
     frame.close();
 }
 
-let arrowDown = "document.GetElementById(clicked_id).style.-webkit-transform = 'rotate(-135deg)'";
-function arrowTransform(clicked_id) {
-    let up = 'document.getElementById(clicked_id).style.' + '-webkit-transform = "rotate(-135deg)"';
-    if(document.getElementById(clicked_id).style.transform != "rotate(45deg)") {
-        arrowDown;
-        console.log(arrowDown);
-        // document.getElementById(clicked_id).style.arrowDown = "rotate(45deg)";
-    } else {
-        up;
-        up2;
-    }
-}
-
 function dropdown(elmnt) {
     let dropElmnt = elmnt.nextElementSibling;
     if (dropElmnt.style.display != "inline-block") {
@@ -67,4 +54,15 @@ function dropdown(elmnt) {
         dropElmnt.style.display = "none";
     }
 }
+
+function arrowTransform(clicked_id) {
+    // let arrowDown = ("document.GetElementById(clicked_id).style.") + ("-webkit-transform = 'rotate(-135deg)'");
+    // let up = ('document.getElementById(clicked_id).style.') + ('-webkit-transform = "rotate(-135deg)"');
+    if(document.getElementById(clicked_id).style.transform != "rotate(45deg)") {
+        document.getElementById(clicked_id).style.transform = "rotate(45deg)";
+    } else {
+        document.getElementById(clicked_id).style.transform = "rotate(-135deg)";
+    }
+}
+
 

@@ -25,16 +25,18 @@
       </div>
       <ul class="list-items">
         <li><a href="/website/index/html/index.html"><i class="fas fa-home"></i>Home</a></li>
-        <li onclick="dropdown(this)"><a href="#"><i class="fas fa-stream"></i>Course Library</a></li>
-        <i class="arrow up" id="course-arrow"></i>
+        <li><a href="#"><i class="fas fa-stream"></i>Course Library</a></li>
+        <i class="arrow up" id="course-arrow" onclick="arrowTransform(this.id); dropdown(this)"></i>
         <div class="dropdown-content" id="course-library-content">
           <li onclick="dropdown(this)"><a href="#">HTML Basic</a></li>
           <div class="dropdown-content dropdown-content-child" id="htmlBasic-content">
             <li><a href="#">HTML Introduction</a></li>
           </div>
         </div>
+        <div>
         <li><a href="#"><i class="fas fa-sliders-h"></i>Clients</a></li>
-        <i class="arrow up" id="clients-arrow" onclick="arrowTransform(this.id)"></i>
+        <i class="arrow up" id="clients-arrow" onclick="arrowTransform(this.id); dropdown(this)"></i>
+        </div>
         <li><a href="#"><i class="fas fa-address-book"></i>Services</a></li>
         <li><a href="#"><i class="fas fa-cog"></i>Settings</a></li>
         <li><a href="#"><i class="fas fa-user"></i>About us</a></li>
